@@ -8,7 +8,7 @@ const plannerFunctions = require('./controllers/missionPlanController');
 
 const droneFunctions=require('./controllers/droneController');
 
-//Test - Saiteja
+
 const myDroneFunctions=require('./controllers/droneDetailsController');
 const myMissionFunctions=require('./controllers/missionDetailsController');
 const myMissionNotifFunctions=require('./controllers/missionNotificationController');
@@ -34,7 +34,7 @@ router.put("/drones/:id", droneFunctions.editDrone);
 router.get('/viewdrone',droneFunctions.ViewDrone);
 router.get("/countdrones",droneFunctions.CountDrones);
 
-//Test - Saiteja
+
 router.get("/countdrones1",myDroneFunctions.countDrones);
 router.get("/getalldrones1",myDroneFunctions.getAllDrones);
 router.get("/getonedrone1/:drone_id",myDroneFunctions.getOneDrone);

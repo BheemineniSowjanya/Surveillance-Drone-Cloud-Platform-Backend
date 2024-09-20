@@ -14,14 +14,14 @@ const server = http.createServer(app);
 const isDev = process.env.NODE_ENV !== 'production';
 console.log(isDev);
 const corsOptions = {
-  // origin: 'https://dronecloud.saitejagoruganthu.com',
-  origin: isDev ? 'http://localhost:3000' : 'https://dronecloud.saitejagoruganthu.com',
+  // origin: 'https://dronecloud.sowjanyabheemineni.com',
+  origin: isDev ? 'http://localhost:3000' : 'https://dronecloud.sowjanyabheemineni.com',
   credentials: true,
 };
 const io = socketIo(server, {
   cors: {
-    // origin: "https://dronecloud.saitejagoruganthu.com"
-    origin: isDev ? 'http://localhost:3000' : 'https://dronecloud.saitejagoruganthu.com',
+    // origin: "https://dronecloud.sowjanyabheemineni.com"
+    origin: isDev ? 'http://localhost:3000' : 'https://dronecloud.sowjanyabheemineni.com',
   }
 });
 
